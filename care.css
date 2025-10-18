@@ -1,0 +1,248 @@
+.end{
+    background-image:url(dd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:95%;
+    height:500px;
+    box-shadow: 0px 10px 20px rgba(30, 143, 255, 0.644);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 2cm;
+    margin-top: 1cm;
+}
+
+.on-top{
+    width: 600px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color:white;
+    font-size: 30px;
+    margin-top: -10cm;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1cm;
+   justify-content: space-between;
+
+}
+
+.side-1{float: left;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 10px 15px rgba(30, 143, 255, 0.726);
+}
+
+
+.side-2{float: right;
+    padding: 0.2cm;
+    color:dodgerblue;
+    width: 600px;
+    height: 500px;
+    box-shadow: 0px 10px 15px rgba(30, 143, 255, 0.726);
+}
+ol{
+    color:black;
+}
+
+li{
+    font-size: 25px;
+}
+
+
+.gall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.gall div{
+    width: 300px;
+    height: 400px;
+     box-shadow: 0px 10px 15px rgba(30, 143, 255, 0.726);
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-1{
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-image: url(1_NvkgbDQJQwu_8oy5tjzKVA.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+   align-items: center;
+    display: flex;
+    color:white;
+
+}
+
+
+ .img-1::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.425);
+    inset: 0;
+z-index: -1;
+}
+
+
+.img-2{
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-image: url(lame.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+   align-items: center;
+    display: flex;
+    color:white;
+
+}
+
+
+.img-2::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.425);
+    inset: 0;
+z-index: -1;
+}
+
+.img-3{
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-image: url(environment.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+   align-items: center;
+    display: flex;
+    color:white;
+
+}
+
+.img-3::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.425);
+    inset: 0;
+z-index: -1;
+}
+
+
+.img-4{
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-image: url(food.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+   align-items: center;
+    display: flex;
+    color:white;
+
+}
+
+
+.img-4::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.425);
+    inset: 0;
+z-index: -1;
+}
+
+.img-5{
+      isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-image: url(youth.png);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-items: center;
+   align-items: center;
+    display: flex;
+    color:white;
+
+}
+
+.img-5::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.425);
+    inset: 0;
+z-index: -1;
+}
+
+
+@media screen and (max-width:780px){
+
+
+.side-1 img{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.side-2{
+    max-width: 100%;
+
+
+}
+    .end{
+        padding: 0.1cm;
+    }
+
+    .gall div{
+        width: 100%;
+    }
+
+
+    .top-header{
+    max-width: 90%;
+   
+}
+
+
+.on-top{
+   
+    max-width: 400px;
+    max-height: 200px;
+    transform: translateX(10PX);
+}
+
+ .footer-section {
+   padding: 0;
+  
+    
+}
+}

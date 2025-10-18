@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+
+.tryme{
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px ;
+     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px ;
+     border-color: black;
+    margin-top: 44cm;
+     
+  
+  
+}
+
+.tryme,div{
+    gap: 0.2cm;
+    border-bottom: -4cm;
+    
+}
+
+
+
+.ok1{
+
+   grid-area: 1/1/3/3;
+   border-top-left-radius:  20%;
+ border-top-right-radius:  20%;
+ border-bottom-left-radius:  20%;
+    background-image: url(qk.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  position: relative;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    color:white;
+    isolation: isolate;
+    overflow: hidden;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.336);
+}
+
+.ok1::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.575);
+    inset: 0;
+z-index: -1;
+}
+
+a{color:white;
+
+text-decoration: none;}
+
+
+.ok2{
+
+
+grid-area: 3/1/4/3;
+    background: linear-gradient(20deg,dodgerblue,rgb(255, 101, 255));
+border-radius: 20px;
+  align-items: center;
+    justify-content: center;
+    display: flex;
+    color:white;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.247);
+    transition: 2s ease-out;
+     
+}
+
+.ok2:hover{
+    background: linear-gradient(20deg,dodgerblue,rgb(255, 101, 255));
+    animation-delay: 2s;
+   color:black;
+
+}
+
+img{
+    animation: huo 3s ;
+    width:1.4cm;
+     height: 1.4cm;
+}
+@keyframes hou {
+
+   10%{ transform: rotateX(60deg);}
+   20%{ transform: rotateX(160deg);}
+}
+
+.ok3{
+    grid-area:1/3/3/5;
+   
+    background-color: rgb(218, 160, 35);
+border-radius: 50%;
+border: 4px solid;
+border-style: dotted;
+border-color: purple;
+border-spacing: 0.3cm;
+color: white;
+text-align: center;
+justify-content: center;
+align-content: center;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.336);
+}
+
+.ok3 h1{
+ font-size:20px;
+}
+
+.ok4 h1{
+ font-size:20px;
+ overflow: hidden;
+}
+.ok4{
+    grid-area: 3/3/3/5;
+    background-color: red;
+    border-bottom-left-radius: 20%;
+ border-bottom-right-radius:  20%;
+ border-top-right-radius:  20%;
+ color: white;
+text-align: center;
+justify-content: center;
+align-content: center;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.329);
+}
+/*ok we go */
+
+.side-data{
+    display:flex;
+   flex-direction: column;
+     border-color: black;
+     float: right;
+     margin-top: 0cm;
+     gap: 0.4cm;
+     
+}
+
+.inner-1{
+    grid-area:1/1/4/8 ;
+ background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+   padding: 0.4cm;
+   color: rgb(0, 0, 0);
+   border-radius: 10%;
+     font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.inner-2{
+    grid-area: 4/1/6/4;
+  background-color: rgba(128, 128, 128, 0);
+   text-align: center;
+   padding: 0.4cm;
+   color: rgb(0, 0, 0);
+   border-radius: 10%;
+   font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.inner-3{
+    grid-area: 6/1/8/4;
+   background-color: rgba(128, 128, 128, 0);
+   text-align: center;
+   padding: 0.4cm;
+   color: rgb(0, 0, 0);
+   border-radius: 10%;
+    border-radius: 10%;
+   font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.inner-4{
+    grid-area: 4/4/8/8;
+    background-color: rgba(88, 145, 95, 0.233);
+     text-align: center;
+   padding: 0.4cm;
+   color: rgb(0, 0, 0);
+      border-radius: 10%;
+       border-radius: 10%;
+   font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+        /*here we sar the cube*/
+        
+        
+                
+                
+        
+                
+    .cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotateX(-25deg) rotateY(-25deg);
+  animation: rotate 35s infinite linear;
+  animation-delay: 1s;
+  margin: 100px auto;
+  margin-top: -2cm;
+ 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    transform:  rotateY(1060deg) rotateX(-60deg);
+  }
+}
+img{
+
+}
+.face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+   border-radius: 20px;
+}
+
+.front {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  transform: translateZ(155px);
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.back {
+  background: linear-gradient(45deg, #4ecdc4, #88d8d0);
+  transform: translateZ(-155px) rotateY(180deg);
+   border-radius: 20px;
+}
+
+.right {
+  background: linear-gradient(45deg, #45b7d1, #7ed0e8);
+  transform: translateX(155px) rotateY(90deg);
+   border-radius: 20px;
+}
+
+.left {
+  background: linear-gradient(45deg, #96ceb4, #b8e0c9);
+  transform: translateX(-155px) rotateY(-90deg);
+   border-radius: 20px;
+}
+
+.top {
+  background: linear-gradient(45deg, #feca57, #ffeaa7);
+  transform: translateY(-155px) rotateX(90deg);
+   border-radius: 20px;
+}
+
+.bottom {
+  background: linear-gradient(45deg, #ff9ff3, #ffcbf7);
+  transform: translateY(154px) rotateX(-90deg);
+   border-radius: 20px;
+}
+
+
+
+/* Optional: Add some perspective to the container */
+
+        .over-ride{
+           padding-left: 0;
+            margin-top: -10cm;
+            box-shadow: 0 5px 15px rgba(54, 54, 54, 0.63);
+            height:fit-content;
+            background:linear-gradient(10deg, rgb(8, 25, 70),purple);
+            border-radius: 10px;
+
+        } 
+
+/* here we have to try the new cube */
+
+
+/* we end the cube*/
+
+
+
+
+
+
+        .written-1{
+            padding: 2cm;
+        }   
+        .written-1 h2 {
+            color:rgb(235, 8, 235);
+            font-size: 50px;
+            background-color: white;
+            width: fit-content;
+            border-radius: 10px;
+        }    
+
+        .written-1 p{
+            color: rgb(255, 255, 255);
+            font-size:25px ;
+        }
+        .Gallery{
+           
+         height: 600px;
+          margin-left: 5%;
+          display: grid;
+          grid-template-columns: 100px 100px 100px 100px  100px 100px 100px  100px 100px 100px  100px;
+          grid-template-rows: 100px 100px 100px 100px  100px 100px 100px   100px 100px  100px;
+
+
+        }
+
+        .ima-1{
+            grid-area: 1/1/3/4;
+            background-image: url(markets-compressed-1-1200x675.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .ima-2{
+            grid-area: 1/4/4/7;
+             background-image: url(tomatoes.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+
+        .ima-3{
+            grid-area: 3/1/6/4;
+             background-image: url(kafumbe-mukasa.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .ima-4{
+            grid-area: 4/4/6/8;
+             background-image: url(undp-ug-MarketSocialDist-2020.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .ima-5{
+            grid-area: 1/7/4/11;
+             background-image:url(pexels-n-voitkevich-6863187.jpg);
+             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.822);
+        }
+
+        .ima-6{
+            grid-area: 4/8/6/11;
+             background-image:url(hand.png);
+             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+
+        .ima-7{
+            grid-area: 1/11/6/14;
+             background-image: url(qk.jpeg);
+             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.863);
+            
+
+            
+        }
+
+   
+
+
+    </style>
+</body>
+<div class="body">
+
+
+
+
+<h3 style="color: rgb(233, 125, 2); font-style: normal;">LETS CONNECT.........</h3>
+
+
+
+
+
+
+<div class="side-data"> 
+    <div class="inner-1">
+<h2 style="color:black;   font-size: 15px;font-family: sans-serif; "><u>About Us</u></h2>
+<h4   style="color:rgb(8, 8, 8); font-size: 30px; font-family: sans-serif; "><img src="teacher-2.svg" >Welcome to <abbr style="color: purple;">QK Traders'Sacco</abbrs></h4>
+                <p>Quadral Kay is a savings and credit cooperative organization founded in 2019 with a mission to empower our members financially.
+                Our core values are transparency, accountability, and member-centricity. We strive to create a supportive 
+                environment where our members can achieve their financial goals and build a brighter future.</p>
+            
+    </div>
+    <div class="inner-2">
+    <div class="cont">
+        <h2><img src="open-book.svg" > Our Vision</h2>
+        <p>To be a leading FInancial  institution in Uganda that nurtures Ugandans to achieve their full potential...</p>
+    </div>
+    </div>
+    <div class="inner-3">
+        <div class="cont">
+        <h2><img src="award.svg" > Our Mission</h2>
+        <p>To deliver financial independence to all Ugandans .</p>
+
+    </div>
+    </div>
+    <div class="inner-4">
+        <h3><img src="cash.svg" ><u>Leadership</u></h3>
+                    <p>Experienced professionals guiding our SACCO</p>
+                    <h3><u>Field Officers</u></h3>
+                    <p>Dedicated to serving our members</p>
+                    <h3><u>Support Staff</u></h3>
+                    <p>Ensuring smooth operations</p>
+    </div>
+</div>
+
+
+
+
+    <div class="tryme">
+
+
+<div class="ok1">
+
+<div class="we"> Come Lets Be Together
+</div>
+</div>
+
+<div class="ok2">
+ <a href="tel:072463438" > <img src="phone.gif" style="border-radius: 50%;">0772463438</a> 
+</div>
+
+<div class="ok3">
+<h1> Pay With MTN  MOMO<br> and stay connected</h1>
+</div>
+
+<div class="ok4">
+<h1>Pay With Airtel <br> Dail *185*67563# to<br> make Transactions to your Account </h1>
+</div>
+    </div>
+
+
+
+<div class="cube">
+  <div class="face front">
+
+    <img src="click.gif" style="border-radius: 50%; width:1cm; height: 1cm;"> <br>For direct calls click below <img src="call.png"> 
+            <a href="tel:072463438" > 0772463438</a><br> <a href="tel:072463438" > 0772463438</a><br>
+            <br><a href="tel:072463438" > 0772463438</a></h2></div>
+  <div class="face back">Back</div>
+  <div class="face right">Right</div>
+  <div class="face left">Left</div>
+  <div class="face top">Top</div>
+  <div class="face bottom">Bottom</div>
+</div>
+
+
+<div class="over-ride">
+    <div class="written-1">
+    <h2 >Our Community <span>Gallery</span>
+</h2>
+                            <p>Step into the vibrant world of QK 
+                                Traders Sacco  through our Environment 
+                                . From FInancial Independence to co-curricular achievements,
+                                 such As Women empowerment </p>
+
+                                 <div class="Gallery">
+
+        <div class="ima-1"></div>
+        <div class="ima-2"></div>
+        <div class="ima-3"></div>
+        <div class="ima-4"></div>
+        <div class="ima-5"></div>
+        <div class="ima-6"></div>
+         <div class="ima-7"></div>
+    </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+    
+</html>
